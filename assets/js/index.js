@@ -1,6 +1,6 @@
 
 
-var qtdBloco = 4
+var qtdBloco = 8
 
 var blocos = [
     {tipo:"terra",valor:-1},
