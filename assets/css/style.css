@@ -1,0 +1,73 @@
+body{
+    --quadrado: 50px
+}
+#conteudo{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#mundo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.titulo-botoes{
+    height: 50%;
+}
+.camadas{
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--quadrado)*8);
+    height: calc(var(--quadrado)*9);
+   
+}
+.aleatoria{
+    width: 40px;
+    background-color: white;
+}
+.linha{
+    display: flex;
+    width: 100%;
+}
+.bloco{
+    width: var(--quadrado);
+    height: var(--quadrado);
+    background-size: contain;
+}
+.terra{
+    background-image: url('../img/terra.png');
+}
+
+.terra2{
+    background-image: url('../img/terra2.png');
+}
+
+.carvao{
+    background-image: url('../img/carvao.png');
+}
+
+.ferro{
+    background-image: url('../img/ferro.png');
+}
+
+.ouro{
+    background-image: url('../img/ouro.png');
+}
+
+.diamante{
+    background-image: url('../img/diamante.png');
+}
+
+.obsidian{
+    background-image: url('../img/obsidian.png');
+}
+
+.bedrock{
+    background-image: url('../img/bedrock.png');
+}
+
+
+
