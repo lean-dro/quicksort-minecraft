@@ -1,6 +1,16 @@
-body{
-    --quadrado: 50px
+@font-face {
+    font-family: 'Monocraft';
+    src: url('../fonts/Monocraft.ttf');
 }
+body{
+    --quadrado: 50px;
+    background-image: url('../img/fundo.gif');
+     background-size: cover;
+     background-repeat: no-repeat;
+     font-family: 'Monocraft';
+     color: white;
+}
+
 #conteudo{
     width: 100vw;
     height: 80vh;
@@ -16,6 +26,26 @@ body{
 }
 .titulo-botoes{
     height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao{
+    background-color: #858585;
+    border: 2px solid black;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow:inset  3px 3px #a1a1a1, inset  -3px -3px #595959;
+    cursor: pointer;
+
+}
+.botao:hover{
+    font-size: 14px;
 }
 .camadas{
     display: flex;
@@ -25,7 +55,7 @@ body{
    
 }
 .aleatoria{
-    width: 40px;
+    width: 50px;
     background-color: white;
 }
 .linha{
@@ -36,6 +66,12 @@ body{
     width: var(--quadrado);
     height: var(--quadrado);
     background-size: contain;
+    background-repeat: no-repeat;
+}
+.selecionado{
+    width: calc(var(--quadrado) - 1px);
+    height: calc(var(--quadrado) - 1px);
+    border: 1px solid white;
 }
 .terra{
     background-image: url('../img/terra.png');

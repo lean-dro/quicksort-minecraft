@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>QuickSort</title>
 </head>
 <body onload="iniciarMundo(), misturarCamadas()">
     <div id="conteudo">
-        <div class="titulo-botoes">
-            <span class="titulo">QuickSort Mine</span>
+        <div id="botoes" class="titulo-botoes">
+            <div onclick="quicksort(camadasAleatorias, posicaoInicial, posicaoFinal)" class="botao">
+                <span>Organizar</span>
+            </div>    
+            <div onclick="reiniciarCamadaAleatoria()" class="botao">
+                <span>Reiniciar</span>
+            </div>  
         </div>
     
         <div id="mundo">
