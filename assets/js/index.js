@@ -134,8 +134,7 @@ function particionar(vetor, comeco, fim) {
     camada_guardada = vetor[comeco]
      vetor[comeco] = vetor[i]
     vetor[i] = camada_guardada
-  
-   
+    
     listarCamadasAleatorias()
     return i   
 }
