@@ -104,23 +104,20 @@ function listarCamadasAleatorias() {
 
 
 
-var bloco = ""
+
 function quicksort(vetor, comeco, fim) {
     if(comeco < fim){
             setTimeout(() => {
             var posicaoPivot = particionar(vetor, comeco, fim)
-
             quicksort(vetor, comeco, (posicaoPivot-1))
             quicksort(vetor, (posicaoPivot+1), fim)
-
-        }, 2000);
+        }, 2500);
     }
 }
 
 function particionar(vetor, comeco, fim) {
     var pivot = vetor[comeco].valor
     var i = comeco
-
     for(var j = comeco +1; j<=fim; j++){
         var valorBlocoComparacao = vetor[j].valor
         if(valorBlocoComparacao <= pivot){
@@ -128,17 +125,16 @@ function particionar(vetor, comeco, fim) {
             var camada_guardada = vetor[i]
             vetor[i] = vetor[j]
             vetor[j] = camada_guardada
+            listarCamadasAleatorias()
         }
+        
     }
-    
     camada_guardada = vetor[comeco]
-     vetor[comeco] = vetor[i]
+    vetor[comeco] = vetor[i]
     vetor[i] = camada_guardada
-    
     listarCamadasAleatorias()
     return i   
 }
-
 
 
 

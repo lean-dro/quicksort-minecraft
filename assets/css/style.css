@@ -2,8 +2,11 @@
     font-family: 'Monocraft';
     src: url('../fonts/Monocraft.ttf');
 }
+
 body{
     --quadrado: 50px;
+        width: 100vw;
+    height: 100vh;
     background-image: url('../img/fundo.gif');
      background-size: cover;
      background-repeat: no-repeat;
@@ -52,10 +55,9 @@ body{
     flex-direction: column;
     width: calc(var(--quadrado)*8);
     height: calc(var(--quadrado)*9);
-   
 }
 .aleatoria{
-    width: 50px;
+    width: var(--quadrado);
     background-color: white;
 }
 .linha{
@@ -67,11 +69,6 @@ body{
     height: var(--quadrado);
     background-size: contain;
     background-repeat: no-repeat;
-}
-.selecionado{
-    width: calc(var(--quadrado) - 1px);
-    height: calc(var(--quadrado) - 1px);
-    border: 1px solid white;
 }
 .terra{
     background-image: url('../img/terra.png');
@@ -107,3 +104,13 @@ body{
 
 
 
+@media(max-width: 895px){
+    body{
+        --quadrado: 20px;
+    }
+}
+@media(max-width: 351px){
+    body{
+        --quadrado: 15px;
+    }
+}
